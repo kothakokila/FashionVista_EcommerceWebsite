@@ -1,0 +1,98 @@
+.loginbody{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.auth-container { 
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  
+
+.signup-box, .login-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 600px; 
+    margin: 0 auto; 
+  }
+  
+  .signup-box h2, .login-box h2 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signup-box form, .login-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-box input, .login-box input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .signup-box input:focus, .login-box input:focus {
+    border-color: #333;
+    outline: none;
+  }
+  
+  .signup-box .lg-button, .login-box .lg-button {
+    padding: 0.75rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-box .lg-button:hover, .login-box .lg-button:hover {
+    background-color: #555;
+  }
+  
+  .signup-box a, .login-box a {
+    display: block;
+    margin-top: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .signup-box a:hover, .login-box a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .signup-box p, .login-box p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  } 
+
+  .login-box .extra-links a, .signup-box .extra-links a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-box .extra-links a:hover, .signup-box .extra-links a:hover {
+    text-decoration: underline;
+}

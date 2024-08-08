@@ -1,0 +1,83 @@
+/* src/components/navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #808080;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 70px; 
+    margin-right: 3px;
+}
+
+.navbar-slogan {
+    font-size: 12px;
+    color: #777;
+}
+
+.navbar-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-search {
+    position: relative;
+}
+
+.navbar-search input {
+    padding: 5px 10px;
+    padding-right: 30px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icons a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-icons a:hover {
+  color: #555;
+}
+
+.navbar-icons i {
+  font-size: 18px;
+}
+
+.profile-icon {
+  position: relative;
+}

@@ -1,0 +1,43 @@
+.order-history-body {
+    padding: 20px;
+}
+
+.order-history-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.order {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.order h3 {
+    margin-top: 0;
+}
+
+.order-product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.order-product-card img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.order-product-card h4 {
+    margin: 0;
+}
+
+.order-product-card p {
+    margin: 5px 0;
+}

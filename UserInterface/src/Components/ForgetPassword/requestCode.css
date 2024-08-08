@@ -1,0 +1,65 @@
+.forget-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .req-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  input[type="email"], input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  
+  button.req-button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  button.req-button:hover {
+    background-color: #555;
+  }
+  
+  .forget-p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  p.error-message {
+    color: red;
+  }
+  
+  p.success-message {
+    color: green;
+  }
+  
