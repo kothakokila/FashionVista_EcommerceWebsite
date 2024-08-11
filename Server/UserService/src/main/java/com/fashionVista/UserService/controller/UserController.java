@@ -75,7 +75,7 @@ public class UserController {
             return ResponseEntity.ok(authResponse);
         } else {
             return ResponseEntity.status(401).body("Invalid email or password");
-            }
+        }
     }
 
     @PostMapping("/forget-password")

@@ -30,7 +30,6 @@ public class WishlistService {
                 throw new ResourceNotFoundException("Product not found for ID: " + wishlistItem.getProductId());
             }
             wishlistItemDTO.setProduct(product);
-
             return wishlistItemDTO;
         }).collect(Collectors.toList());
 
@@ -54,6 +53,7 @@ public class WishlistService {
         if (product == null) {
             throw new ResourceNotFoundException("Product not found");
         }
+        wishlistItem.setProductId(product.getId());
         wishlistItem.setUserId(userId);
         return wishlistRepository.save(wishlistItem);
     }

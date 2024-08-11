@@ -13,11 +13,40 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductService {
     @Autowired
     private ProductRepository productRepository;
+    @Autowired
+    private ObjectMapper objectMapper;
+
+    private boolean productsLoaded = false;
+
+    @PostConstruct
+    public void loadProducts() {
+        if (!productRepository.findAll().isEmpty()) {
+            System.out.println("Products already exist in the database.");
+            return;
+        }
+
+        try (InputStream inputStream = TypeReference.class.getResourceAsStream("/products.json")) {
+            if (inputStream == null) {
+                System.out.println("products.json file not found.");
+                return;
+            }
+
+            TypeReference<List<Product>> typeReference = new TypeReference<>() {};
+            List<Product> products = objectMapper.readValue(inputStream, typeReference);
+
+            productRepository.saveAll(products);
+            System.out.println("New products loaded successfully");
+        } catch (IOException e) {
+            System.out.println("Failed to load products: " + e.getMessage());
+        }
+    }
+
 
     public List<Product> getProductsByCategory(String category) {
         return productRepository.findByCategory(category);
@@ -40,22 +69,9 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    @Autowired
-    private ObjectMapper objectMapper;
-
-    @PostConstruct
-    public void loadProducts() {
-        ObjectMapper mapper = new ObjectMapper();
-        TypeReference<List<Product>> typeReference = new TypeReference<List<Product>>() {};
-        InputStream inputStream = TypeReference.class.getResourceAsStream("/products.json");
-
-        try {
-            List<Product> products = mapper.readValue(inputStream, typeReference);
-            productRepository.saveAll(products);
-            System.out.println("Products loaded successfully");
-        } catch (IOException e) {
-            System.out.println("Failed to load products: " + e.getMessage());
-        }
+    public List<Product> searchProducts(String query) {
+        List<Product> products=productRepository.findByNameContainingIgnoreCase(query);
+        return products.stream().distinct().collect(Collectors.toList());
     }
 
 }

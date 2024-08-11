@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import axios from "axios";
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromWishlist, setWishlistItems } from '../slices/wishlistSlice';
-import ProductCard from '../Product_Card/ProductCard';
+import ProductCard from '../ProductCard/ProductCard';
 
 const Wishlist = () => {
     const wishlistItems = useSelector((state) => state.wishlist.items);
