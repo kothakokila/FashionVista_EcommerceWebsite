@@ -22,15 +22,17 @@ public class UserService {
     private PasswordEncoder passwordEncoder;
 
     public Optional<User> registerUser(User user) {
+        String email = user.getEmail().toLowerCase();
         if (userRepository.findByEmail(user.getEmail()).isPresent()) {
             return Optional.empty();
         }
+        user.setEmail(email);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         return Optional.of(userRepository.save(user));
     }
 
     public Optional<User> loginUser(String email, String password) {
-        Optional<User> userOptional = userRepository.findByEmail(email);
+        Optional<User> userOptional = userRepository.findByEmail(email.toLowerCase());
         if (userOptional.isPresent()) {
             User user = userOptional.get();
             if (passwordEncoder.matches(password, user.getPassword())) {
@@ -47,6 +49,7 @@ public class UserService {
     private final Map<String, LocalDateTime> codeTimestamps = new HashMap<>();
 
     public String generateConfirmationCode(String email) {
+        email=email.toLowerCase();
         String code = String.format("%06d", new Random().nextInt(999999));
         confirmationCodes.put(email, code);
         codeTimestamps.put(email, LocalDateTime.now());
@@ -54,6 +57,7 @@ public class UserService {
     }
 
     public boolean validateConfirmationCode(String email, String code) {
+        email = email.toLowerCase();
         if (!confirmationCodes.containsKey(email)) {
             return false;
         }
@@ -65,6 +69,7 @@ public class UserService {
     }
 
     public void clearConfirmationCode(String email) {
+        email=email.toLowerCase();
         confirmationCodes.remove(email);
         codeTimestamps.remove(email);
     }

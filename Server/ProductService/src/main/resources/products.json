@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "category": "mens",
     "name": "Men's Gray T-Shirt",
     "description": "Comfortable cotton t-shirt for men in gray color.",
@@ -8,7 +7,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/mens/mens_img_1.jpg"
   },
   {
-    "id": 2,
     "category": "mens",
     "name": "Men's Green T-shirt",
     "description": "Classic t-shirt for men",
@@ -16,7 +14,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/mens/mens_img_2.jpg"
   },
   {
-    "id": 3,
     "category": "mens",
     "name": "Men's Yellow-White T-shirt",
     "description": "Classic fit t-shirt for men",
@@ -24,7 +21,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/mens/mens_img_3.jpg"
   },
   {
-    "id": 4,
     "category": "mens",
     "name": "Men's Jeans",
     "description": "Classic fit jeans for men",
@@ -32,7 +28,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/mens/mens_img_4.jpg"
   },
   {
-    "id": 5,
     "category": "mens",
     "name": "Black Jeans For Men",
     "description": "Black jeans for men",
@@ -40,7 +35,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/mens/mens_img_5.jpg"
   },
   {
-    "id": 6,
     "category": "mens",
     "name": "Rock Jacket",
     "description": "Stylish rock jacket for men",
@@ -48,7 +42,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/mens/mens_img_6.jpg"
   },
   {
-    "id": 7,
     "category": "mens",
     "name": "Greyar Jacket",
     "description": "Gray jacket for men",
@@ -56,7 +49,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/mens/mens_img_7.jpg"
   },
   {
-    "id": 8,
     "category": "mens",
     "name": "Soley Solid Jacket",
     "description": "Solid black jacket for men",
@@ -64,7 +56,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/mens/mens_img_8.jpg"
   },
   {
-    "id": 9,
     "category": "mens",
     "name": "Dream Suit",
     "description": "Classic suit for men",
@@ -72,7 +63,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/mens/mens_img_9.jpg"
   },
   {
-    "id": 10,
     "category": "mens",
     "name": "Auro Set Suit",
     "description": "Stylish suit set for men",
@@ -81,7 +71,6 @@
   },
 
   {
-    "id": 11,
     "category": "womens",
     "name": "Roadster Dress",
     "description": "Elegant floral print dress for women",
@@ -89,7 +78,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_1.jpg"
   },
   {
-    "id": 12,
     "category": "womens",
     "name": "Gyeh Dress",
     "description": "Stylish dress for women",
@@ -97,7 +85,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_2.jpg"
   },
   {
-    "id": 13,
     "category": "womens",
     "name": "Saki Top",
     "description": "Stylish high-neck top for women",
@@ -105,7 +92,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_3.jpg"
   },
   {
-    "id": 14,
     "category": "womens",
     "name": "Pink Chudidhar",
     "description": "Pink traditional wear for women",
@@ -113,7 +99,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_4.jpg"
   },
   {
-    "id": 15,
     "category": "womens",
     "name": "Ankut Saree",
     "description": "Green saree for women",
@@ -121,7 +106,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_5.jpg"
   },
   {
-    "id": 16,
     "category": "womens",
     "name": "Ethnic Blue Dress",
     "description": "Blue ethnic dress for women",
@@ -129,7 +113,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_6.jpg"
   },
   {
-    "id": 17,
     "category": "womens",
     "name": "Black Jumpsuit",
     "description": "Black jumpsuit for women",
@@ -137,7 +120,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_7.jpg"
   },
   {
-    "id": 18,
     "category": "womens",
     "name": "Blue Jeans",
     "description": "Blue jeans for women",
@@ -145,7 +127,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_8.jpg"
   },
   {
-    "id": 19,
     "category": "womens",
     "name": "Black Trouser",
     "description": "Black trousers for women",
@@ -153,7 +134,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_9.jpg"
   },
   {
-    "id": 20,
     "category": "womens",
     "name": "Shree Dress",
     "description": "Stylish red frock for women",
@@ -161,7 +141,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/womens/womens_img_10.jpg"
   },
   {
-    "id": 21,
     "category": "kids",
     "name": "Cutie Pink Dress",
     "description": "Cute pink dress for kids",
@@ -169,7 +148,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_1.jpg"
   },
   {
-    "id": 22,
     "category": "kids",
     "name": "Ash Red Dress",
     "description": "Ash red dress for kids",
@@ -177,7 +155,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_2.jpg"
   },
   {
-    "id": 23,
     "category": "kids",
     "name": "Heya Cream Dress",
     "description": "Cream dress for kids",
@@ -185,7 +162,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_3.jpg"
   },
   {
-    "id": 24,
     "category": "kids",
     "name": "Yellow Tee",
     "description": "Yellow t-shirt for kids",
@@ -193,7 +169,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_4.jpg"
   },
   {
-    "id": 25,
     "category": "kids",
     "name": "Chickoo Tees",
     "description": "Chickoo colored t-shirt for kids",
@@ -201,7 +176,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_5.jpg"
   },
   {
-    "id": 26,
     "category": "kids",
     "name": "Baby Tshirt",
     "description": "Elegant floral print top for women",
@@ -209,7 +183,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_6.jpg"
   },
   {
-    "id": 27,
     "category": "kids",
     "name": "Baby suit",
     "description": "Elegant floral print top for women",
@@ -217,7 +190,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_7.jpg"
   },
   {
-    "id": 28,
     "category": "kids",
     "name": "Baby Black Suit",
     "description": "Elegant floral print top for women",
@@ -225,7 +197,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_8.jpg"
   },
   {
-    "id": 29,
     "category": "kids",
     "name": "Blue Frock",
     "description": "Elegant floral print top for women",
@@ -233,7 +204,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_9.jpg"
   },
   {
-    "id": 30,
     "category": "kids",
     "name": "Blah Bluey",
     "description": "Elegant floral print top for women",
@@ -241,7 +211,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/kids/kids_img_10.jpg"
   },
   {
-    "id": 31,
     "category": "accessories",
     "name": "Yellow Chimes",
     "description": "Women White Barrette Flower Crystal Bridal Hair Accessories",
@@ -249,7 +218,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_1.jpg"
   },
   {
-    "id": 32,
     "category": "accessories",
     "name": "Auro Bag",
     "description": "Grey Water Resistant Makeup Accessories Storage Bag",
@@ -257,7 +225,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_2.jpg"
   },
   {
-    "id": 33,
     "category": "accessories",
     "name": "Yellow Chimes set",
     "description": "Girls Set of 10 Embellished Hair Accessories Set",
@@ -265,7 +232,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_3.jpg"
   },
   {
-    "id": 34,
     "category": "accessories",
     "name": "Voyage",
     "description": "Unisex Full Rim Square Frames",
@@ -273,7 +239,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_4.jpg"
   },
   {
-    "id": 35,
     "category": "accessories",
     "name": "Aura Set",
     "description": "Grey Water Resistant Electronics Accessories Organizer",
@@ -281,7 +246,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_5.jpg"
   },
   {
-    "id": 36,
     "category": "accessories",
     "name": "Mutaq",
     "description": "Men Tie Cufflinks Pocket Square & Brooch Accessories Gift Set",
@@ -289,7 +253,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_6.jpg"
   },
   {
-    "id": 37,
     "category": "accessories",
     "name": "Hair Flare",
     "description": "Women Artificial Flower Made Hair Accessories And Comb Pin",
@@ -297,7 +260,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_7.jpg"
   },
   {
-    "id": 38,
     "category": "accessories",
     "name": "Zakies Earrings",
     "description": "Silver-Plated Zircons-Studded Drop Earrings",
@@ -305,7 +267,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_8.jpg"
   },
   {
-    "id": 39,
     "category": "accessories",
     "name": "Rubby earrings",
     "description": "Set of 6 Gold-Plated & White Drop Earrings",
@@ -313,7 +274,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_9.jpg"
   },
   {
-    "id": 40,
     "category": "accessories",
     "name": "Puma",
     "description": "Leather Strips wallet",
@@ -321,7 +281,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/accessories/accessories_img_10.jpg"
   },
   {
-    "id": 41,
     "category": "homeLiving",
     "name": "La verne mattress protector",
     "description": "Blue King Size Cotton Terry Waterproof Mattress Protector",
@@ -329,7 +288,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_1.jpg"
   },
   {
-    "id": 42,
     "category": "homeLiving",
     "name": "Noa Bath Towels",
     "description": "Set Of 14 Grey Striped Pure Cotton 500 GSM Towel Set",
@@ -337,7 +295,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_2.jpg"
   },
   {
-    "id": 43,
     "category": "homeLiving",
     "name": "Crosscut Floorlamp",
     "description": "Blue & Black Metal Cylinder Shaped Floor Lamp With Shelves",
@@ -345,7 +302,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_3.jpg"
   },
   {
-    "id": 44,
     "category": "homeLiving",
     "name": "Rak Clock",
     "description": "Yellow & Black Printed Contemporary Wall Clock",
@@ -353,7 +309,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_4.jpg"
   },
   {
-    "id": 45,
     "category": "homeLiving",
     "name": "Hosley Mirror",
     "description": "Hosley Black Set of 2 Round Decorative Wall Mirrors",
@@ -361,7 +316,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_5.jpg"
   },
   {
-    "id": 46,
     "category": "homeLiving",
     "name": "Mallow BedCover",
     "description": "White & Pink Cartoon Printed Cotton Single Size Bed Cover",
@@ -369,7 +323,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_6.jpg"
   },
   {
-    "id": 47,
     "category": "homeLiving",
     "name": "Kuber Organizers",
     "description": "Brown & Yellow 3 Pieces Printed Non-Woven Underbed Storage Bag Organizers",
@@ -377,7 +330,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_7.jpg"
   },
   {
-    "id": 48,
     "category": "homeLiving",
     "name": "Aura Coffee Cups",
     "description": "Cream-Coloured & Brown 12 Pieces Ceramic Glossy Cup & Saucer Set",
@@ -385,7 +337,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_8.jpg"
   },
   {
-    "id": 49,
     "category": "homeLiving",
     "name": "White Decorr",
     "description": "Set of 4 Blue & Pink Couple Figurine Showpieces",
@@ -393,7 +344,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_9.jpg"
   },
   {
-    "id": 50,
     "category": "homeLiving",
     "name": "CocoZone Birthday Decor",
     "description": "Pink & Purple 126 Pieces Birthday Decoration Kits",
@@ -401,7 +351,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/homeLiving/home_img_10.jpg"
   },
   {
-    "id": 51,
     "category": "beauty",
     "name": "Lakme Lipstick",
     "description": "9to5 Powerplay Priming Matte Lipstick, Lasts 16hrs, Deep Wine,",
@@ -409,7 +358,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/beauty/beauty_img_1.jpg"
   },
   {
-    "id": 52,
     "category": "beauty",
     "name": "Sugar Lipstick",
     "description": "Matte As Hell Lightweight & Long Lasting Lip Crayon - Viola 07",
@@ -417,7 +365,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/beauty/beauty_img_2.jpg"
   },
   {
-    "id": 53,
     "category": "beauty",
     "name": "Mars Mascara",
     "description": "Bold Unfold Waterproof Volumizing Mascara 10ml - Star Sapphire",
@@ -425,7 +372,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/beauty/beauty_img_3.jpg"
   },
   {
-    "id": 54,
     "category": "beauty",
     "name": "Fit Me Foundation",
     "description": "New York Fit Me Matte+Poreless Foundation 16H Oil Control 30 ml - Ivory 115",
@@ -433,7 +379,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/beauty/beauty_img_4.jpg"
   },
   {
-    "id": 55,
     "category": "beauty",
     "name": "Faces Canada Primer",
     "description": "Faces Canada Makeup Base Primer 30g",
@@ -441,7 +386,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/beauty/beauty_img_5.jpg"
   },
   {
-    "id": 56,
     "category": "beauty",
     "name": "Swiss Beauty Eyeshadow",
     "description": "Ultimate Eyeshadow Palette -Shade 2",
@@ -449,7 +393,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/beauty/beauty_img_6.jpg"
   },
   {
-    "id": 57,
     "category": "beauty",
     "name": "Faces Canada Compact",
     "description": "Matte + Poreless SPF 32 Compact Powder 6g - Natural Beige 220",
@@ -457,7 +400,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/beauty/beauty_img_7.jpg"
   },
   {
-    "id": 58,
     "category": "beauty",
     "name": "Lakme Nailpolish",
     "description": "Quick Drying Ultra Long-wear Glossy Finish Nail Lacquer 10 ml-Pinkpurple Treat 11",
@@ -465,7 +407,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/beauty/beauty_img_8.jpg"
   },
   {
-    "id": 59,
     "category": "beauty",
     "name": "Essentials Bodylotion",
     "description": "White Orchid Brightening Body Lotion - 180 ml",
@@ -473,7 +414,6 @@
     "image": "https://raw.githubusercontent.com/kothakokila/fashionvista_images/main/beauty/beauty_img_9.jpg"
   },
   {
-    "id": 60,
     "category": "beauty",
     "name": "Watermelon Sunscreen",
     "description": "Watermelon Hyaluronic SPF 50 PA+++ Dewy & 100% No White Cast Sunscreen - 50g",

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import ProductCard from '../Product_Card/ProductCard';
+import ProductCard from '../ProductCard/ProductCard.jsx';
 import { setProducts } from '../slices/productsSlice';
 import { useDispatch } from 'react-redux';
 

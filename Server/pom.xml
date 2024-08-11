@@ -19,6 +19,7 @@
         <module>ProductService</module>
         <module>UserService</module>
         <module>CartService</module>
+        <module>ChatbotService</module>
         <module>WishlistService</module>
         <module>OrderService</module>
         <module>FashionVistaGateway</module>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ProductCard.css';
+import './ViewProductCard.css';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -50,35 +50,38 @@ const ViewProductCard = () => {
     }
 
     return (
-        <div className="product-card-clicked d-flex">
-            <img className="prod-image" src={product.image} alt={product.name} />
-            <div className="card-body">
-                <h5 className="card-title">{product.name}</h5>
-                <p className="product-description card-text m-1">{product.description}</p>
-                <div className='price-and-quan'>
-                    <p className="product-price m-1 fw-bold">${product.price}</p>
-                    <div className="quantity-in">
-                        <label htmlFor={`quantity_${product.id}`}>qn:</label>
-                        <input
-                            type="number"
-                            id={`quantity_${product.id}`}
-                            value={quantity}
-                            onChange={(e) => {
-                                let value = parseInt(e.target.value, 10);
-                                if (isNaN(value) || value < 1) {
-                                    value = 1;
-                                }
-                                setQuantity(value);
-                            }}
-                        />
-                    </div>
-                </div>
-                <div className="prod-btn-container">
-                    <i className="fas fa-heart icon-only icon-wishlist" onClick={handleAddtoWishlist}></i>
-                    <i className="fas fa-cart-plus icon-only icon-cart" onClick={handleAddToCart}></i>
+        
+        <div className="view-product-card">
+            <div className="view-product-image-container">
+                <img className="view-product-image" src={product.image} alt={product.name} />
+            </div>
+        <div className="view-product-details">
+            <h2 className="view-product-title">{product.name}</h2>
+            <p className="view-product-description">{product.description}</p>
+            <div className="view-product-price-and-quantity">
+                <p className="view-product-price">${product.price}</p>
+                <div className="view-product-quantity">
+                    <label htmlFor={`quantity_${product.id}`}>Quantity:</label>
+                    <input
+                        type="number"
+                        id={`quantity_${product.id}`}
+                        value={quantity}
+                        onChange={(e) => {
+                            let value = parseInt(e.target.value, 10);
+                            if (isNaN(value) || value < 1) {
+                                value = 1;
+                            }
+                            setQuantity(value);
+                        }}
+                    />
                 </div>
             </div>
+            <div className="view-product-actions">
+                <i className="fas fa-heart view-icon-wishlist" onClick={handleAddtoWishlist}></i>
+                <i className="fas fa-cart-plus view-icon-cart" onClick={handleAddToCart}></i>
+            </div>
         </div>
+    </div>
     );
 };
 

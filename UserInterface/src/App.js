@@ -5,7 +5,7 @@ import Login from './Components/Login/login';
 import Signup from './Components/Login/signUp';
 import Navbar from './Components/layout/navbar';
 import Home from './Components/WelcomePage/Home';
-import ViewProductCard from './Components/Product_Card/ViewProductCard';
+import ViewProductCard from './Components/ProductCard/ViewProductCard';
 import Mens from './Components/pages/mens';
 import Womens from './Components/pages/womens';
 import Kids from './Components/pages/kids';
@@ -21,6 +21,8 @@ import OrderHistoryPage from './Components/OrderHistory/OrderHistoryPage';
 import RequestCode from './Components/ForgetPassword/requestCode';
 import ValidateCode from './Components/ForgetPassword/validateCode';
 import ResetPassword from './Components/ForgetPassword/resetPassword';
+import Chatbot from './Components/Chatbot/Chatbot';
+import SearchResults from './Components/Search/SearchResults';
 
 
 
@@ -40,12 +42,14 @@ function App() {
               <Route path="/accessories" element={<Accessories />} />
               <Route path="/home-living" element={<HomeLiving />} />
               <Route path="/beauty" element={<Beauty />} />
+              <Route path="/search/:query" element={<SearchResults />} />
               <Route path="/product/:id" element={<ViewProductCard />} />
               <Route path="/wishlist" element={<Wishlist />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/payment" element={<PaymentPage />}/>
               <Route path="/about" element={<AboutUs />} />
               <Route path="/contact" element={<ContactUs />} />
+              <Route path="/chatbot" element={<Chatbot/>} />
               <Route path="/orderHistory" element={<OrderHistoryPage />}/>
               <Route path="*" element={<Navigate to="/home" />} />
             </Routes>
