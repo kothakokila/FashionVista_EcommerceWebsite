@@ -15,7 +15,7 @@ const CartProductCard = ({ product }) => {
         return null; 
     }
 
-    const { image, name, description, price } = productDetails;
+    const { images, name, description, price } = productDetails;
 
     const handleRemoveFromCart = async () => {
         try {
@@ -35,7 +35,7 @@ const CartProductCard = ({ product }) => {
         <div className='cart-body'>
         <div className="cart-product-card">
             <div className='image-container'>
-                <img className="cart-product-image" src={image} alt={name} />
+                <img className="cart-product-image" src={images[0]} alt={name} />
             </div>
             <div className="cart-product-details">
                 <h5 className="cart-product-title">{name}</h5>

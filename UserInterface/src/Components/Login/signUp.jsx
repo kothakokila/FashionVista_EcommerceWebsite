@@ -15,7 +15,6 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  // const [role, setRole] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
   const validatePassword = (password) => {

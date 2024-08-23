@@ -31,7 +31,6 @@ const Login = () => {
     dispatch(loginUser({ email, password }))
       .unwrap()
       .then((user) => {
-        console.log('Login successful, navigating to home:', user);
         navigate('/home', { state: user });
         if (rememberMe) {
           localStorage.setItem('email', email);
@@ -80,11 +79,11 @@ const Login = () => {
           />
           <div>
           <input
-                type="checkbox"
-                id="rememberMe"
-                checked={rememberMe}
-                onChange={(e) => setRememberMe(e.target.checked)}
-              />
+            type="checkbox"
+            id="rememberMe"
+            checked={rememberMe}
+            onChange={(e) => setRememberMe(e.target.checked)}
+            />
               <label htmlFor="rememberMe">Remember Me</label>
           </div>
           <button className="lg-button" type="submit">Login</button>

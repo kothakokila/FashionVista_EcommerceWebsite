@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProductCard.css';
 import axios from 'axios';
 import { useDispatch, useSelector } from "react-redux";
@@ -12,6 +12,24 @@ const ProductCard = ({ product, showRemoveButton, onRemove, onAddToCart }) => {
     const token = useSelector((state) => state.auth.token) || localStorage.getItem('token');
 
     const [quantity, setQuantity] = useState(1);
+    const [inStock, setInStock] = useState(true);
+
+    useEffect(() => {
+        const checkStock = async () => {
+            try {
+                const response = await axios.get(`http://localhost:8080/inventory/${product.id}`);
+
+                if (response.status === 200) {
+                    setInStock(response.data.stockQuantity > 0);
+                }
+            } catch (error) {
+                console.error('Failed to check inventory:', error);
+                setInStock(false);
+            }
+        };
+
+        checkStock();
+    }, [product.id, token]);
 
     const handleAddtoWishlist = async () => {
         try {
@@ -37,23 +55,32 @@ const ProductCard = ({ product, showRemoveButton, onRemove, onAddToCart }) => {
     };
 
     const handleAddToCart = () => {
-        dispatch(addItemToCart({ userId, ...product, quantity: quantity }));
-        setQuantity(1); 
-        alert('Item added to cart!');
-        if (onAddToCart) {
-            onAddToCart(product.id);
+        if (inStock) {
+            dispatch(addItemToCart({ userId, ...product, quantity: quantity }));
+            setQuantity(1);
+            alert('Item added to cart!');
+            if (onAddToCart) {
+                onAddToCart(product.id);
+            }
+        } else {
+            alert('Item is out of stock and cannot be added to the cart.');
         }
     }
 
     return (
             <div className="product-card">
                 <Link to={`/product/${product.id}`}>
-                    <img className="product-image" src={product.image} alt={product.name} />
+                <img
+                    className="product-image"
+                    src={product.images[0]} 
+                    alt={product.name}
+                />
                 </Link>
                 <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
                     <p className="product-description">{product.description}</p>
                     <p className="product-price">${product.price}</p>
+                    {inStock ? null : <p className="out-of-stock">Out of Stock</p>}
                     <div className="quantity-input">
                         <label htmlFor={`quantity_${product.id}`}>Qn:</label>
                         <input
@@ -65,8 +92,9 @@ const ProductCard = ({ product, showRemoveButton, onRemove, onAddToCart }) => {
                                 if (isNaN(value) || value < 1) {
                                     value = 1;
                                 }
-                                setQuantity(value);
+                                setQuantity(value); 
                             }}
+                            disabled={!inStock}
                         />
                     </div>
                     <div className="btn-container">

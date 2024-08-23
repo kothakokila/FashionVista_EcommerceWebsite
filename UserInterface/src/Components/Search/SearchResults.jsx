@@ -15,7 +15,6 @@ const SearchResults = () => {
         console.log('Fetching products...');
         try {
             const response = await axios.get(`http://localhost:8080/products/search?query=${encodeURIComponent(query)}`);
-            console.log('Products fetched:', response.data);
             setProducts(response.data);
             setLoading(false);
         } catch (err) {

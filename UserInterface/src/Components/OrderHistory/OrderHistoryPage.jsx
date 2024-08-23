@@ -45,7 +45,13 @@ const OrderHistoryPage = () => {
                                 {order.items && order.items.length > 0 ? (
                                     order.items.map(item => (
                                         <div key={item.product.id} className="order-product-card">
-                                            <img src={item.product.image} alt={item.product.name} />
+                                            {item.product.images && item.product.images.length > 0 ? (
+                                                <img src={item.product.images[0]} alt={item.product.name} />
+                                            ) : item.product.image ? (
+                                                <img src={item.product.image} alt={item.product.name} />
+                                            ) : (
+                                                <p>No image available</p>
+                                            )}
                                             <div className="order-product-details">
                                                 <h4>{item.product.name}</h4>
                                                 <p>{item.product.description}</p>

@@ -1,6 +1,12 @@
 import './App.css';
-import { Routes, Route, Navigate} from "react-router-dom"
-import { useSelector } from 'react-redux';
+// import React, { useEffect, useState } from 'react';
+import { Routes, Route, Navigate } from "react-router-dom";
+import { useSelector}from 'react-redux'; 
+// import { useDispatch } from 'react-redux';
+// import { logout, loginUser } from './Components/slices/authSlice';
+// import axios from 'axios';
+
+
 import Login from './Components/Login/login';
 import Signup from './Components/Login/signUp';
 import Navbar from './Components/layout/navbar';
@@ -24,10 +30,46 @@ import ResetPassword from './Components/ForgetPassword/resetPassword';
 import Chatbot from './Components/Chatbot/Chatbot';
 import SearchResults from './Components/Search/SearchResults';
 
-
+// const validateToken = async (token) => {
+//   try {
+//     const response = await axios.get('http://localhost:8080/user/validate-token', {
+//       headers: { Authorization: `Bearer ${token}` },
+//     });
+//     return response.status === 200;
+//   } catch (error) {
+//     console.error('Token validation error:', error);
+//     return false;
+//   }
+// };
 
 function App() {
+  // const dispatch = useDispatch();
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  // const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   const checkAuth = async () => {
+  //     const token = localStorage.getItem('token');
+  //     if (token) {
+  //       const isValid = await validateToken(token);
+  //       if (isValid) {
+  //         dispatch(loginUser({ token }));
+  //       } else {
+  //         dispatch(logout());
+  //         localStorage.removeItem('token');
+  //       }
+  //     } else {
+  //       dispatch(logout());
+  //     }
+  //     setLoading(false);
+  //   };
+  //   checkAuth();
+  // }, [dispatch]);
+
+  // if (loading) {
+  //   // You can add a loading spinner or some indication here
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <div>

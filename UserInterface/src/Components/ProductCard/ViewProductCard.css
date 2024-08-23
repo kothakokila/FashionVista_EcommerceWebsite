@@ -1,7 +1,7 @@
 .view-product-card {
     display: flex;
     flex-direction: row;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 20px auto;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -15,22 +15,47 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.view-product-thumbnails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* Reduced padding */
+    border-right: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.view-product-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 5px; /* Reduced margin */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.view-product-thumbnail:hover {
+    border: 2px solid #3498db;
+}
+
 .view-product-image-container {
-    flex: 1;
+    flex: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px; /* Reduced padding */
+    background-color: #fff;
 }
 
 .view-product-image {
     max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    max-height: 600px; /* Adjust to fit your design */
+    object-fit: contain;
+    border-radius: 5px;
 }
 
 .view-product-details {
-    flex: 1;
+    flex: 2;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -54,7 +79,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -112,11 +137,19 @@
     color: #2980b9;
 }
 
-
 @media (max-width: 768px) {
     .view-product-card {
         flex-direction: column;
         width: 95%;
+    }
+
+    .view-product-thumbnails {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .view-product-image {
+        max-height: 400px; /* Adjust for smaller screens */
     }
 
     .view-product-title {
@@ -145,6 +178,10 @@
         width: 100%;
     }
 
+    .view-product-image {
+        max-height: 300px; /* Adjust for smaller screens */
+    }
+
     .view-product-title {
         font-size: 20px;
     }
@@ -165,3 +202,4 @@
         font-size: 1.2em;
     }
 }
+

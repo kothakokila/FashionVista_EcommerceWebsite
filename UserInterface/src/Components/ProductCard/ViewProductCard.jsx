@@ -14,6 +14,7 @@ const ViewProductCard = () => {
 
     const dispatch = useDispatch();
     const [quantity, setQuantity] = useState(1);
+    const [selectedImage, setSelectedImage] = useState(product.images[0]); // Default to first image
     const userId = useSelector(state => state.auth.user.id);
     const token = useSelector((state) => state.auth.token) || localStorage.getItem('token');
 
@@ -45,43 +46,63 @@ const ViewProductCard = () => {
         alert('Item added to cart!');
     }
 
+    const handleThumbnailClick = (image) => {
+        setSelectedImage(image);
+    }
+
     if (!product) {
         return <div>Product not found</div>;
     }
 
     return (
-        
         <div className="view-product-card">
+            {product.images.length > 1 && (
+                <div className="view-product-thumbnails">
+                    {product.images.map((image, index) => (
+                        <img
+                            key={index}
+                            className="view-product-thumbnail"
+                            src={image}
+                            alt={`Thumbnail ${index + 1}`}
+                            onClick={() => handleThumbnailClick(image)}
+                        />
+                    ))}
+                </div>
+            )}
             <div className="view-product-image-container">
-                <img className="view-product-image" src={product.image} alt={product.name} />
+                <img
+                    className="view-product-image"
+                    src={selectedImage}
+                    alt={`${product.name} selected`}
+                />
             </div>
-        <div className="view-product-details">
-            <h2 className="view-product-title">{product.name}</h2>
-            <p className="view-product-description">{product.description}</p>
-            <div className="view-product-price-and-quantity">
-                <p className="view-product-price">${product.price}</p>
-                <div className="view-product-quantity">
-                    <label htmlFor={`quantity_${product.id}`}>Quantity:</label>
-                    <input
-                        type="number"
-                        id={`quantity_${product.id}`}
-                        value={quantity}
-                        onChange={(e) => {
-                            let value = parseInt(e.target.value, 10);
-                            if (isNaN(value) || value < 1) {
-                                value = 1;
-                            }
-                            setQuantity(value);
-                        }}
-                    />
+            <div className="view-product-details">
+                <h2 className="view-product-title">{product.name}</h2>
+                <p className="view-product-description">{product.description}</p>
+                <div className="view-product-price-and-quantity">
+                    <p className="view-product-price">${product.price}</p>
+                    <div className="view-product-quantity">
+                        <label htmlFor={`quantity_${product.id}`}>Quantity:</label>
+                        <input
+                            type="number"
+                            id={`quantity_${product.id}`}
+                            value={quantity}
+                            onChange={(e) => {
+                                let value = parseInt(e.target.value, 10);
+                                if (isNaN(value) || value < 1) {
+                                    value = 1;
+                                }
+                                setQuantity(value);
+                            }}
+                        />
+                    </div>
+                </div>
+                <div className="view-product-actions">
+                    <i className="fas fa-heart view-icon-wishlist" onClick={handleAddtoWishlist}></i>
+                    <i className="fas fa-cart-plus view-icon-cart" onClick={handleAddToCart}></i>
                 </div>
             </div>
-            <div className="view-product-actions">
-                <i className="fas fa-heart view-icon-wishlist" onClick={handleAddtoWishlist}></i>
-                <i className="fas fa-cart-plus view-icon-cart" onClick={handleAddToCart}></i>
-            </div>
         </div>
-    </div>
     );
 };
 
